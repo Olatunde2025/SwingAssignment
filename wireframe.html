@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI Assignment Wireframe</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #f1f5f9;
+            font-family: 'Tahoma', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* 1. JFrame Component (800x800 Window) */
+        .jframe-window {
+            width: 800px;
+            height: 800px;
+            background-color: #ffffff;
+            border: 2px solid #0f172a;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* Title Bar (Window Header) */
+        .title-bar {
+            height: 40px;
+            background-color: #cbd5e1;
+            border-bottom: 2px solid #0f172a;
+            display: flex;
+            align-items: center;
+            padding: 0 12px;
+        }
+
+        /* ImageIcon Component (App Icon in Top-Left) */
+        .image-icon {
+            width: 20px;
+            height: 20px;
+            background-color: #2563eb;
+            border: 1px solid #1e3a8a;
+            border-radius: 3px;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        .window-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #0f172a;
+            flex-grow: 1;
+        }
+
+        /* 2. JPanel Component (Main Container) */
+        .jpanel-container {
+            flex-grow: 1;
+            background-color: #e2e8f0; /* Color.LIGHT_GRAY equivalent */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 60px;
+            gap: 25px;
+            border: 2px dashed #94a3b8;
+            margin: 20px;
+            position: relative;
+        }
+
+        .component-badge {
+            font-size: 11px;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            color: #475569;
+            background: #ffffff;
+            padding: 2px 8px;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+        }
+
+        /* 3. JLabel Component */
+        .jlabel-box {
+            border: 2px solid #2563eb;
+            background-color: #ffffff;
+            padding: 14px 28px;
+            border-radius: 6px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: bold;
+            color: #0f172a;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        /* 4. JButton Component */
+        .jbutton-box {
+            border: 2px solid #16a34a;
+            background-color: #f0fdf4;
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-size: 13px;
+            font-weight: bold;
+            color: #15803d;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body>
+
+<!-- JFrame (800x800 Outer Window) -->
+<div class="jframe-window">
+
+    <!-- Title Bar with ImageIcon -->
+    <div class="title-bar">
+        <div class="image-icon">ICON</div>
+        <div class="window-title">Java Swing Assignment [JFrame]</div>
+    </div>
+
+    <!-- JPanel Container -->
+    <div class="jpanel-container">
+        <span class="component-badge">&lt;JPanel Container&gt;</span>
+
+        <!-- JLabel Component -->
+        <div class="jlabel-box">
+            <span class="component-badge" style="display:block; margin-bottom:6px;">&lt;JLabel&gt;</span>
+            Welcome to Java Swing First Individual Assignment by 'Olatunde Rahman'
+        </div>
+
+        <!-- JButton Component -->
+        <div class="jbutton-box">
+            <span class="component-badge" style="display:block; margin-bottom:6px;">&lt;JButton&gt;</span>
+            Change Theme & Text
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
